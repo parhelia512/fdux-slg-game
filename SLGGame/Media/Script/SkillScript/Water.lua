@@ -1,11 +1,10 @@
 function useskill()
 	local caster  = ScriptCommonLib.GetTempString("squadid");
 	local target  = ScriptCommonLib.GetTempString("targetsquadid");
-	local atknum = SquadLib.GetActionPoint(caster) * 10;
 	local atlv, atid = SquadLib.GetEffectLevelByName(caster, "AtkTimeImprove");
 	local alv, aid = SquadLib.GetEffectLevelByName(caster, "AtkImprove");
-	atknum = atknum + atlv * 10;
-	local atk  = 9 + alv * 3;
+	local atknum = SquadLib.GetActionPoint(caster) * (10 + 3 * atlv);
+	local atk  = 10 + alv * 4;
 	
 	SquadLib.Animation(caster, 1, "Skill", "none", "mp_seal_05", 0, 1);
 	SquadLib.PlayParticle(target, 3, "mp_water", "none", 2500);

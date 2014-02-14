@@ -14,7 +14,7 @@ function useskill()
 		SquadLib.SetUnitNum(caster, unitnum);
 		
 		SquadLib.PlayParticle(target, 3, "mp_diabolique", "none", 2500);
-		SkillLib.MagicAttack(caster, target, 20 , 30, 20);
+		SkillLib.MagicAttack(caster, target, 24 , 30, 20);
 	
 		local casterlv = SquadLib.GetSquadLevel(caster);
 		local targetlv = SquadLib.GetSquadLevel(target);

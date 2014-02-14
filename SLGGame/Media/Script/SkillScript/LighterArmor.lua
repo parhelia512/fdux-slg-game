@@ -49,7 +49,7 @@ function onaffect()
 	if mid ~= "" then
 		SquadLib.RemoveModifier(sid, mid);
 	end
-	mid = SquadLib.ApplyModifier(sid, 2, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0);
+	mid = SquadLib.ApplyModifier(sid, 2, 0.0, 0.0, 0.0, 0.0, 2.0, 1.0, 0.0, 0.0, 0.0, 0.0);
 	ScriptCommonLib.SetString("modifierid", mid);
 	if tid == "" then
 		tid = SquadLib.AddSquadTrigger(sid, "TurnStart", "onturnstart");

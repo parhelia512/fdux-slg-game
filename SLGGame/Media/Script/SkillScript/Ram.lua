@@ -53,8 +53,8 @@ function onmeleeattack()
 		local cavap = MapLib.GetGroundAttr(croodx, croody, 3);
 		if cavap < 3 then
 			local lv = SquadLib.GetEffectLevel(sid, eid);
-			mid = SquadLib.ApplyModifier(sid, 0, 2 * lv, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
-			SquadLib.SetString("modifierid", mid);
+			mid = SquadLib.ApplyModifier(sid, 0, 1 + 2 * lv, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
+			ScriptCommonLib.SetString("modifierid", mid);
 		end
 	end
 end

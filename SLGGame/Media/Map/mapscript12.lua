@@ -97,6 +97,8 @@ function turnend()
 	local team = ScriptCommonLib.GetTempInt("team");
 	local win = ScriptCommonLib.GetInt("win");
 	
+	ScriptCommonLib.Log("MAPLOG turn"..turn.." team"..team.." win"..win);
+	
 	if team == 1 and turn >= 8 and win == 0 then
 		local mission1state = ScriptCommonLib.GetInt("mission1state");
 		if mission1state == 1 then
@@ -139,6 +141,7 @@ function inarea()
 		local faction = SquadLib.GetFaction(squad);
 		if faction == 0 then
 			MapLib.MoveCameraTo( 9, 18);
+			ScriptCommonLib.Log("MAPLOG win1");
 			ScriptCommonLib.SetInt("win", 1);
 			local mission1 = ScriptCommonLib.GetInt("mission1");
 			--完成任务(missionindex, missionstate)

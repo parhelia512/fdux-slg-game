@@ -4,8 +4,8 @@ function useskill()
 	local atlv, atid = SquadLib.GetEffectLevelByName(sid, "AtkTimeImprove");
 	local alv, aid = SquadLib.GetEffectLevelByName(sid, "AtkImprove");
 	local atknum = 30 + atlv * 10;
-	local atk = SquadLib.GetActionPoint(sid) + 5;
-	atk  = atk + alv * 3;
+	local atk = SquadLib.GetActionPoint(sid) + 8;
+	atk  = atk + alv * 4;
 	
 	SquadLib.Animation(sid, 1, "Skill", "none", "mp_seal_05", 0, 1);
 	
@@ -27,7 +27,7 @@ function useskill()
 			if tgtf ~= sf then
 				SquadLib.PlayParticle(tgtsid, 1, "mp_flare_07", "none", 2500);
 				SkillLib.MagicAttack(sid, tgtsid, atknum , atk, 30);
-				ep = ep + 30;
+				ep = ep + 25;
 			end
 		end
 	end	

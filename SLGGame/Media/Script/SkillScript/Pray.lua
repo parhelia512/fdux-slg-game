@@ -6,10 +6,10 @@ function useskill()
 	local num = SquadLib.GetUnitNum(caster);
 	local sklv = SquadLib.GetSkillLevel(caster, "Pray");
 	local camp, eid = SquadLib.GetEffectLevelByName(caster, "Camp");
-	if ap > 2 + sklv * 2 + camp then
-	 ap = 2 + sklv * 2 + camp;
+	if ap > 2 + sklv * 2 + camp * 2 then
+	 ap = 2 + sklv * 2 + camp * 2;
 	end
-	num = num + ap;
+	num = num + ap * (1 * sklv);
 	if num > maxnum then
 		num = maxnum;
 	end

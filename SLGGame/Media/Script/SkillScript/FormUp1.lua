@@ -7,7 +7,7 @@ function onaffect()
 	if mid ~= "" then
 		SquadLib.RemoveModifier(sid, mid);
 	end
-	mid = SquadLib.ApplyModifier(sid, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
+	mid = SquadLib.ApplyModifier(sid, 0.0, 3.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
 	ScriptCommonLib.SetString("modifierid", mid);
 	
 	if tid1 == "" then
