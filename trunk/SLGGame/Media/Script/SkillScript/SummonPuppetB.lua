@@ -3,8 +3,8 @@ function useskill()
 	local maxnum = SquadLib.GetUnitMaxNum(caster);
 	SquadLib.Animation(caster, 1, "Skill", "none", "mp_seal_05", 0, 1);
 	local num = SquadLib.GetUnitNum(caster);
-	local sklv = SquadLib.GetSkillLevel(caster, "SummonPuppetB");
-	num = num + 6 + sklv * 3;
+	--local sklv = SquadLib.GetSkillLevel(caster, "SummonPuppetB");
+	num = num + 6;-- + sklv * 3;
 	if num > maxnum then
 		num = maxnum;
 	end

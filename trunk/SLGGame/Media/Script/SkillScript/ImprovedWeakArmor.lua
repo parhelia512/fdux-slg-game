@@ -16,8 +16,8 @@ function onaffect()
 		if attr > 2 then
 			def = (attr - 2) / 2;
 		end
-		if def > 3 then
-			def = 3;
+		if def > 4 then
+			def = 4;
 		end
 	end
 	

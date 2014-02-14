@@ -31,14 +31,14 @@
     <BigOutpost_1 Type="Outpost" GridX="5" GridY="6" Mesh="BigOutpost.mesh" Direction="2" />
     <BigOutpost_2 Type="Outpost" GridX="14" GridY="10" Mesh="BigOutpost.mesh" Direction="0" />
     <LittleCamp_0 Type="Camp" GridX="9" GridY="1" Mesh="Camp.mesh" Direction="2" />
-    <ForestLowWithRoad2_0 Type="ForestLow" GridX="17" GridY="12" Mesh="ForestLowWithRoad2.mesh" Direction="2" />
-    <ForestLowWithRoad2_1 Type="ForestLow" GridX="17" GridY="13" Mesh="ForestLowWithRoad2.mesh" Direction="2" />
-    <ForestLowWithRoad2_2 Type="ForestLow" GridX="17" GridY="14" Mesh="ForestLowWithRoad2.mesh" Direction="2" />
-    <ForestLowWithRoad2_3 Type="ForestLow" GridX="17" GridY="15" Mesh="ForestLowWithRoad2.mesh" Direction="2" />
-    <ForestLowWithRoad2_4 Type="ForestLow" GridX="17" GridY="16" Mesh="ForestLowWithRoad2.mesh" Direction="2" />
-    <ForestLowWithRoad2_5 Type="ForestLow" GridX="18" GridY="17" Mesh="ForestLowWithRoad2.mesh" Direction="0" />
-    <ForestLowWithRoad2_6 Type="ForestLow" GridX="19" GridY="17" Mesh="ForestLowWithRoad2.mesh" Direction="0" />
-    <ForestLowWithRoad3_0 Type="ForestLow" GridX="17" GridY="17" Mesh="ForestLowWithRoad3.mesh" Direction="1" />
+    <ForestLowWithRoad2_0 Type="ForestWithRoad" GridX="17" GridY="12" Mesh="ForestLowWithRoad2.mesh" Direction="2" />
+    <ForestLowWithRoad2_1 Type="ForestWithRoad" GridX="17" GridY="13" Mesh="ForestLowWithRoad2.mesh" Direction="2" />
+    <ForestLowWithRoad2_2 Type="ForestWithRoad" GridX="17" GridY="14" Mesh="ForestLowWithRoad2.mesh" Direction="2" />
+    <ForestLowWithRoad2_3 Type="ForestWithRoad" GridX="17" GridY="15" Mesh="ForestLowWithRoad2.mesh" Direction="2" />
+    <ForestLowWithRoad2_4 Type="ForestWithRoad" GridX="17" GridY="16" Mesh="ForestLowWithRoad2.mesh" Direction="2" />
+    <ForestLowWithRoad2_5 Type="ForestWithRoad" GridX="18" GridY="17" Mesh="ForestLowWithRoad2.mesh" Direction="0" />
+    <ForestLowWithRoad2_6 Type="ForestWithRoad" GridX="19" GridY="17" Mesh="ForestLowWithRoad2.mesh" Direction="0" />
+    <ForestLowWithRoad3_0 Type="ForestWithRoad" GridX="17" GridY="17" Mesh="ForestLowWithRoad3.mesh" Direction="1" />
     <ForestLow1_0 Type="ForestLow" GridX="16" GridY="13" Mesh="ForestLow1.mesh" Direction="0" />
     <ForestLow1_1 Type="ForestLow" GridX="18" GridY="13" Mesh="ForestLow1.mesh" Direction="0" />
     <ForestLow1_2 Type="ForestLow" GridX="18" GridY="12" Mesh="ForestLow1.mesh" Direction="0" />
@@ -94,9 +94,9 @@
     <ForestLow2_12 Type="ForestLow" GridX="19" GridY="5" Mesh="ForestLow2.mesh" Direction="0" />
     <ForestLow2_13 Type="ForestLow" GridX="16" GridY="10" Mesh="ForestLow2.mesh" Direction="0" />
     <ForestLow2_14 Type="ForestLow" GridX="15" GridY="10" Mesh="ForestLow2.mesh" Direction="0" />
-    <ForestLowWithRoad2_7 Type="ForestLow" GridX="16" GridY="11" Mesh="ForestLowWithRoad2.mesh" Direction="0" />
-    <ForestLowWithRoad2_8 Type="ForestLow" GridX="15" GridY="11" Mesh="ForestLowWithRoad2.mesh" Direction="0" />
-    <ForestLowWithRoad3_1 Type="ForestLow" GridX="17" GridY="11" Mesh="ForestLowWithRoad3.mesh" Direction="0" />
+    <ForestLowWithRoad2_7 Type="ForestWithRoad" GridX="16" GridY="11" Mesh="ForestLowWithRoad2.mesh" Direction="0" />
+    <ForestLowWithRoad2_8 Type="ForestWithRoad" GridX="15" GridY="11" Mesh="ForestLowWithRoad2.mesh" Direction="0" />
+    <ForestLowWithRoad3_1 Type="ForestWithRoad" GridX="17" GridY="11" Mesh="ForestLowWithRoad3.mesh" Direction="0" />
     <ForestLow1_22 Type="ForestLow" GridX="16" GridY="12" Mesh="ForestLow1.mesh" Direction="0" />
     <ForestLow1_23 Type="ForestLow" GridX="15" GridY="12" Mesh="ForestLow1.mesh" Direction="0" />
     <ForestLow1_24 Type="ForestLow" GridX="14" GridY="12" Mesh="ForestLow1.mesh" Direction="0" />
@@ -129,9 +129,9 @@
     <ForestLow2_22 Type="ForestLow" GridX="13" GridY="2" Mesh="ForestLow2.mesh" Direction="0" />
     <ForestLow2_23 Type="ForestLow" GridX="8" GridY="6" Mesh="ForestLow2.mesh" Direction="0" />
     <ForestLow2_24 Type="ForestLow" GridX="10" GridY="6" Mesh="ForestLow2.mesh" Direction="0" />
-    <ForestLowWithRoad2_9 Type="ForestLow" GridX="9" GridY="5" Mesh="ForestLowWithRoad2.mesh" Direction="2" />
-    <ForestLowWithRoad2_10 Type="ForestLow" GridX="9" GridY="6" Mesh="ForestLowWithRoad2.mesh" Direction="3" />
-    <ForestLowWithRoad2_11 Type="ForestLow" GridX="9" GridY="4" Mesh="ForestLowWithRoad2.mesh" Direction="2" />
+    <ForestLowWithRoad2_9 Type="ForestWithRoad" GridX="9" GridY="5" Mesh="ForestLowWithRoad2.mesh" Direction="2" />
+    <ForestLowWithRoad2_10 Type="ForestWithRoad" GridX="9" GridY="6" Mesh="ForestLowWithRoad2.mesh" Direction="3" />
+    <ForestLowWithRoad2_11 Type="ForestWithRoad" GridX="9" GridY="4" Mesh="ForestLowWithRoad2.mesh" Direction="2" />
     <ForestLow2_25 Type="ForestLow" GridX="11" GridY="5" Mesh="ForestLow2.mesh" Direction="0" />
     <BigCamp_0 Type="Camp" GridX="1" GridY="12" Mesh="BigCamp.mesh" Direction="1" />
     <Stone2_0 Type="Stone" GridX="2" GridY="12" Mesh="Stone2.mesh" Direction="0" />
@@ -205,9 +205,9 @@
     <ForestLow2_55 Type="ForestLow" GridX="16" GridY="6" Mesh="ForestLow2.mesh" Direction="0" />
     <ForestLow2_56 Type="ForestLow" GridX="17" GridY="4" Mesh="ForestLow2.mesh" Direction="0" />
     <Stone2_6 Type="Stone" GridX="16" GridY="5" Mesh="Stone2.mesh" Direction="0" />
-    <ForestLowWithRoad2_12 Type="ForestLow" GridX="15" GridY="6" Mesh="ForestLowWithRoad2.mesh" Direction="3" />
-    <ForestLowWithRoad2_13 Type="ForestLow" GridX="15" GridY="7" Mesh="ForestLowWithRoad2.mesh" Direction="3" />
-    <ForestLowWithRoad2_14 Type="ForestLow" GridX="15" GridY="4" Mesh="ForestLowWithRoad2.mesh" Direction="3" />
+    <ForestLowWithRoad2_12 Type="ForestWithRoad" GridX="15" GridY="6" Mesh="ForestLowWithRoad2.mesh" Direction="3" />
+    <ForestLowWithRoad2_13 Type="ForestWithRoad" GridX="15" GridY="7" Mesh="ForestLowWithRoad2.mesh" Direction="3" />
+    <ForestLowWithRoad2_14 Type="ForestWithRoad" GridX="15" GridY="4" Mesh="ForestLowWithRoad2.mesh" Direction="3" />
     <Stone1_6 Type="Stone" GridX="14" GridY="6" Mesh="Stone1.mesh" Direction="0" />
     <ForestLow2_57 Type="ForestLow" GridX="16" GridY="4" Mesh="ForestLow2.mesh" Direction="0" />
     <ForestLow1_63 Type="ForestLow" GridX="17" GridY="2" Mesh="ForestLow1.mesh" Direction="0" />
@@ -215,7 +215,7 @@
     <ForestLow1_64 Type="ForestLow" GridX="19" GridY="3" Mesh="ForestLow1.mesh" Direction="0" />
     <ForestLow2_59 Type="ForestLow" GridX="17" GridY="0" Mesh="ForestLow2.mesh" Direction="0" />
     <ForestLow1_65 Type="ForestLow" GridX="16" GridY="2" Mesh="ForestLow1.mesh" Direction="0" />
-    <ForestLowWithRoad2_15 Type="ForestLow" GridX="15" GridY="5" Mesh="ForestLowWithRoad2.mesh" Direction="2" />
+    <ForestLowWithRoad2_15 Type="ForestWithRoad" GridX="15" GridY="5" Mesh="ForestLowWithRoad2.mesh" Direction="2" />
 </MapObject>
 <MapEffect />
 <MapSquad>

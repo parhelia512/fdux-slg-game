@@ -6,8 +6,8 @@ function useskill()
 	local bilv, biid = SquadLib.GetEffectLevelByName(target, "ImprovedBlind");
 	local wlv, wid = SquadLib.GetEffectLevelByName(target, "WeakArmor");
 	local wilv, wiid = SquadLib.GetEffectLevelByName(target, "ImprovedWeakArmor");
-	local atknum = 50.0;
-	local atk  = 10.0 + 4 * blv + 6 * bilv + 4 * wlv + 6 * wilv;
+	local atknum = 40.0;
+	local atk  = 10.0 + 4 * blv + 7 * bilv + 4 * wlv + 7 * wilv;
 	
 	SquadLib.Animation(caster, 1, "Skill", "none", "mp_seal_04", 0, 1);
 	SquadLib.PlayParticle(target, 3, "mp_flare", "none", 2500);

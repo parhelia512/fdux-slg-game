@@ -43,6 +43,9 @@ function oncharge()
 	if mid ~= "" then
 		SquadLib.RemoveModifier(sid, mid);
 	end
+	
+	ScriptCommonLib.Log("SKILLLOG Charge"..sid);
+	
 	local lv = SquadLib.GetEffectLevel(sid, eid);
 	mid = SquadLib.ApplyModifier(sid, 0, 1 + lv, 0.0, 0.0, lv, lv, 0.0, 0.0, 0.0, 0.0, 0.0);
 	ScriptCommonLib.SetString("modifierid", mid);

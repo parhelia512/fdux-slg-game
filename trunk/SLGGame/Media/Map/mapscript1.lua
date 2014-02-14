@@ -122,6 +122,8 @@ function outarea()
 				ScriptCommonLib.SetInt("battlestory", 1);
 			end
 		end
+	elseif area == "BigCamp" then
+		ScriptCommonLib.Log("MAPLOG "..squad.." outBigCamp");
 	end
 end
 
@@ -131,6 +133,7 @@ function inarea()
 	local area = ScriptCommonLib.GetTempString("areaid");
 	
 	if area == "BigCamp" then
+		ScriptCommonLib.Log("MAPLOG "..squad.." inBigCamp");
 		local faction = SquadLib.GetFaction(squad);
 		if faction == 0 then
 			local mission1state = ScriptCommonLib.GetInt("mission1state");

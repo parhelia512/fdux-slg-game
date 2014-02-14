@@ -6,7 +6,7 @@ function useskill()
 	if form < 0 then
 		form = 0.0;
 	end
-	local atk = form * squadnum / 50.0;
+	local atk = form * squadnum / 50.0 * 1.5;
 	local mid = SquadLib.ApplyModifier(caster, 0, 0.0, atk, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
 	local x, y = SquadLib.GetSquadCoord(target);
 	if x >  -1 then

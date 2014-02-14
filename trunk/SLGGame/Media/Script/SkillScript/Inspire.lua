@@ -61,7 +61,7 @@ function onaffect()
 		SquadLib.RemoveModifier(sid, mid);
 	end
 	local lv = SquadLib.GetEffectLevel(sid, eid);
-	mid = SquadLib.ApplyModifier(sid, 1, lv, lv, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
+	mid = SquadLib.ApplyModifier(sid, 1, 2, 2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
 	ScriptCommonLib.SetString("modifierid", mid);
 	if tid == "" then
 		tid = SquadLib.AddSquadTrigger(sid, "TurnStart", "onturnstart");
@@ -74,7 +74,7 @@ function onaffect()
 	--end
 	--ScriptCommonLib.SetString("particleid", pid);
 	
-	SquadLib.ShowValue1(sid, "Skills_Inspire", lv, 1.0, 1.0, 1.0);
+	SquadLib.ShowValue1(sid, "Skills_Inspire", 2, 1.0, 1.0, 1.0);
 	
 	ScriptCommonLib.SetInt("turn", 0);
 end

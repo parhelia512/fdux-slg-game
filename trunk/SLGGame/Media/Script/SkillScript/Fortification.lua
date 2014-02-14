@@ -64,6 +64,7 @@ function moveto()
 	
 	if def > 0 then
 		local lv = SquadLib.GetEffectLevel(sid, eid);
+		def = 1 + (def - 1) / 2;  
 		if def > 1 + lv then
 			def = 1 + lv;
 		end

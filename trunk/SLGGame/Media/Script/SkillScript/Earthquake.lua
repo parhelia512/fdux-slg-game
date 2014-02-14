@@ -3,10 +3,9 @@ function useskill()
 	local target  = ScriptCommonLib.GetTempString("targetsquadid");
 	local atlv, atid = SquadLib.GetEffectLevelByName(caster, "AtkTimeImprove");
 	local alv, aid = SquadLib.GetEffectLevelByName(caster, "AtkImprove");
-	local atknum = 20 + atlv * 5;
-	local atk  = 14 + 2 * alv - SquadLib.GetMaxActionPoint(target);
 	local ap = SquadLib.GetActionPoint(caster);
-	atk = ap * atk;
+	local atknum = 30 + atlv * 10;
+	local atk  = 40 - (3.0 - 1.1 * alv - 0.2 * ap) * SquadLib.GetMaxActionPoint(target);
 	
 	SquadLib.Animation(caster, 1, "Skill", "none", "mp_seal_05", 0, 1);
 	SquadLib.PlayParticle(target, 1, "mp_woosh_12", "none", 2500);
@@ -15,7 +14,7 @@ function useskill()
 	
 	SquadLib.ApplyEffect(caster, "Tired");
 	SquadLib.ApplyEffect(caster, "Tired");
-	SquadLib.ApplyEffect(caster, "Tired");
+
 	ScriptCommonLib.SetTempInt("castsuccess", 1);
 end
 

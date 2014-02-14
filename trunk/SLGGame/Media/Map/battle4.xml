@@ -182,7 +182,7 @@
     <ForestLow2_18 Type="ForestLow" GridX="18" GridY="3" Mesh="ForestLow2.mesh" Direction="0" />
     <ForestLow1_24 Type="ForestLow" GridX="18" GridY="8" Mesh="ForestLow1.mesh" Direction="0" />
     <ForestLow1_25 Type="ForestLow" GridX="16" GridY="8" Mesh="ForestLow1.mesh" Direction="0" />
-    <ForestLowWithRoad1_2 Type="ForestLow" GridX="17" GridY="8" Mesh="ForestLowWithRoad1.mesh" Direction="2" />
+    <ForestLowWithRoad1_2 Type="ForestWithRoad" GridX="17" GridY="8" Mesh="ForestLowWithRoad1.mesh" Direction="2" />
     <Stone2_10 Type="Stone" GridX="18" GridY="15" Mesh="Stone2.mesh" Direction="0" />
     <ForestLow2_19 Type="ForestLow" GridX="19" GridY="6" Mesh="ForestLow2.mesh" Direction="0" />
     <ForestLow2_20 Type="ForestLow" GridX="19" GridY="12" Mesh="ForestLow2.mesh" Direction="0" />
@@ -264,8 +264,8 @@
     <ForestLow1_65 Type="ForestLow" GridX="17" GridY="19" Mesh="ForestLow1.mesh" Direction="0" />
     <ForestLow1_66 Type="ForestLow" GridX="19" GridY="18" Mesh="ForestLow1.mesh" Direction="0" />
     <ForestLow1_67 Type="ForestLow" GridX="19" GridY="17" Mesh="ForestLow1.mesh" Direction="0" />
-    <ForestLowWithRoad3_5 Type="ForestLow" GridX="17" GridY="9" Mesh="ForestLowWithRoad3.mesh" Direction="3" />
-    <ForestLowWithRoad1_3 Type="ForestLow" GridX="5" GridY="4" Mesh="ForestLowWithRoad1.mesh" Direction="3" />
+    <ForestLowWithRoad3_5 Type="ForestWithRoad" GridX="17" GridY="9" Mesh="ForestLowWithRoad3.mesh" Direction="3" />
+    <ForestLowWithRoad1_3 Type="ForestWithRoad" GridX="5" GridY="4" Mesh="ForestLowWithRoad1.mesh" Direction="3" />
 </MapObject>
 <MapEffect />
 <MapSquad>

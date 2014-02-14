@@ -17,11 +17,12 @@ function onaffect()
 	end
 	local lv = SquadLib.GetSkillLevel(sid, "Defence");
 	local ap = SquadLib.GetActionPoint(sid);
-	local defence = lv + (ap - 2) / 2;
-	if defence > 2 + lv then
-		defence = 2 + lv;
+	local defence = lv + (ap - 2);
+	if defence > 2 + lv * 2 then
+		defence = 2 + lv * 2;
 	end
 	mid = SquadLib.ApplyModifier(sid, 0, 0.0, 0.0, defence, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
+	ScriptCommonLib.Log("SKILLLOG Defence"..sid.." defence+"..defence);
 	ScriptCommonLib.SetString("modifierid", mid);
 	if tid == "" then
 		tid = SquadLib.AddSquadTrigger(sid, "TurnStart", "onturnstart");
