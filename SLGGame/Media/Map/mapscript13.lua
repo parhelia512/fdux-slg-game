@@ -138,6 +138,7 @@ function inarea()
 	if area == "TargetArea" then
 		local faction = SquadLib.GetFaction(squad);
 		if faction == 0 then
+			BattleLib.InterruptMove();
 			BattleLib.Story("cp26_6.lua");
 			BattleLib.AddGold(5000);
 			BattleLib.DumpSquadData();

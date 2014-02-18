@@ -130,6 +130,11 @@ end
 function outarea()
 	local squad = ScriptCommonLib.GetTempString("squadid");
 	local area = ScriptCommonLib.GetTempString("areaid");
+	
+	if area == "TargetArea" then
+		local faction = SquadLib.GetFaction(squad);
+		ScriptCommonLib.Log("MAPLOG outarea faction"..faction);
+	end
 end
 
 --进入区域触发器
@@ -139,6 +144,7 @@ function inarea()
 	
 	if area == "TargetArea" then
 		local faction = SquadLib.GetFaction(squad);
+		ScriptCommonLib.Log("MAPLOG inarea faction"..faction);
 		if faction == 0 then
 			MapLib.MoveCameraTo( 9, 18);
 			ScriptCommonLib.Log("MAPLOG win1");
@@ -146,6 +152,7 @@ function inarea()
 			local mission1 = ScriptCommonLib.GetInt("mission1");
 			--完成任务(missionindex, missionstate)
 			BattleLib.SetPlayerMission(mission1, 1);
+			BattleLib.InterruptMove();
 			BattleLib.AddBattleSquad("Nothfate", "Team2Squad_11", 9, 18, 2, 50);
 			BattleLib.AddBattleSquad("NothHeavyHSword", "Team2Squad_12", 8, 19, 2, 50);
 			BattleLib.AddBattleSquad("NothHeavyHSword", "Team2Squad_13", 10, 19, 2, 50);
