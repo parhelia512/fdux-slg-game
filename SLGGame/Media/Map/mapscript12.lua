@@ -80,11 +80,38 @@ end
 function turnstart()
 	local turn = ScriptCommonLib.GetTempInt("turn");
 	local team = ScriptCommonLib.GetTempInt("team");
-	local win = ScriptCommonLib.GetInt("win");
 		
 	if team == 1 and turn == 1 then
 		MapLib.MoveCameraTo( 0, 14);
 	    BattleLib.Story("cp24_1.lua");
+	end
+	
+	local win = ScriptCommonLib.GetInt("win");
+	
+	if team == 1 and turn > 14 and win == 0 then
+		MapLib.MoveCameraTo( 9, 18);
+		ScriptCommonLib.Log("MAPLOG win1");
+		ScriptCommonLib.SetInt("win", 1);
+		BattleLib.AddBattleSquad("Nothfate", "Team2Squad_11", 9, 18, 2, 50);
+		BattleLib.AddBattleSquad("NothHeavyHSword", "Team2Squad_12", 8, 19, 2, 50);
+		BattleLib.AddBattleSquad("NothHeavyHSword", "Team2Squad_13", 10, 19, 2, 50);
+		BattleLib.AddBattleSquad("NothHeavyHSword", "Team2Squad_14", 1, 12, 2, 50);
+		BattleLib.AddBattleSquad("NothHeavyHSword", "Team2Squad_15", 1, 14, 2, 50);
+		BattleLib.AddBattleSquad("NothHeavyCrossBow", "Team2Squad_16", 9, 19, 2, 50);
+		BattleLib.AddBattleSquad("NothHeavyCrossBow", "Team2Squad_17", 0, 12, 2, 50);
+		BattleLib.AddBattleSquad("NothHeavyCrossBow", "Team2Squad_18", 0, 13, 2, 50);
+		BattleLib.AddBattleSquad("NothHeavyCrossBow", "Team2Squad_19", 0, 14, 2, 50);
+		BattleLib.AssignAIGroup(2, "Team2Squad_11", "Noth");
+		BattleLib.AssignAIGroup(2, "Team2Squad_12", "Noth");
+		BattleLib.AssignAIGroup(2, "Team2Squad_13", "Noth");
+		BattleLib.AssignAIGroup(2, "Team2Squad_14", "Noth");
+		BattleLib.AssignAIGroup(2, "Team2Squad_15", "Noth");
+		BattleLib.AssignAIGroup(2, "Team2Squad_16", "Noth");
+		BattleLib.AssignAIGroup(2, "Team2Squad_17", "Noth");
+		BattleLib.AssignAIGroup(2, "Team2Squad_18", "Noth");
+		BattleLib.AssignAIGroup(2, "Team2Squad_19", "Noth");
+		BattleLib.Story("cp24_2.lua");
+		win = 1;
 	end
 	if win == 1  then
 		ScriptCommonLib.SetInt("win", 2);
@@ -146,32 +173,35 @@ function inarea()
 		local faction = SquadLib.GetFaction(squad);
 		ScriptCommonLib.Log("MAPLOG inarea faction"..faction);
 		if faction == 0 then
-			MapLib.MoveCameraTo( 9, 18);
-			ScriptCommonLib.Log("MAPLOG win1");
-			ScriptCommonLib.SetInt("win", 1);
-			local mission1 = ScriptCommonLib.GetInt("mission1");
-			--完成任务(missionindex, missionstate)
-			BattleLib.SetPlayerMission(mission1, 1);
-			BattleLib.InterruptMove();
-			BattleLib.AddBattleSquad("Nothfate", "Team2Squad_11", 9, 18, 2, 50);
-			BattleLib.AddBattleSquad("NothHeavyHSword", "Team2Squad_12", 8, 19, 2, 50);
-			BattleLib.AddBattleSquad("NothHeavyHSword", "Team2Squad_13", 10, 19, 2, 50);
-			BattleLib.AddBattleSquad("NothHeavyHSword", "Team2Squad_14", 1, 12, 2, 50);
-			BattleLib.AddBattleSquad("NothHeavyHSword", "Team2Squad_15", 1, 14, 2, 50);
-			BattleLib.AddBattleSquad("NothHeavyCrossBow", "Team2Squad_16", 9, 19, 2, 50);
-			BattleLib.AddBattleSquad("NothHeavyCrossBow", "Team2Squad_17", 0, 12, 2, 50);
-			BattleLib.AddBattleSquad("NothHeavyCrossBow", "Team2Squad_18", 0, 13, 2, 50);
-			BattleLib.AddBattleSquad("NothHeavyCrossBow", "Team2Squad_19", 0, 14, 2, 50);
-			BattleLib.AssignAIGroup(2, "Team2Squad_11", "Noth");
-			BattleLib.AssignAIGroup(2, "Team2Squad_12", "Noth");
-			BattleLib.AssignAIGroup(2, "Team2Squad_13", "Noth");
-			BattleLib.AssignAIGroup(2, "Team2Squad_14", "Noth");
-			BattleLib.AssignAIGroup(2, "Team2Squad_15", "Noth");
-			BattleLib.AssignAIGroup(2, "Team2Squad_16", "Noth");
-			BattleLib.AssignAIGroup(2, "Team2Squad_17", "Noth");
-			BattleLib.AssignAIGroup(2, "Team2Squad_18", "Noth");
-			BattleLib.AssignAIGroup(2, "Team2Squad_19", "Noth");
-			BattleLib.Story("cp24_2.lua");
+			local win = ScriptCommonLib.GetInt("win");
+			if win == 0 then
+				MapLib.MoveCameraTo( 9, 18);
+				ScriptCommonLib.Log("MAPLOG win1");
+				ScriptCommonLib.SetInt("win", 1);
+				local mission1 = ScriptCommonLib.GetInt("mission1");
+				--完成任务(missionindex, missionstate)
+				BattleLib.SetPlayerMission(mission1, 1);
+				BattleLib.InterruptMove();
+				BattleLib.AddBattleSquad("Nothfate", "Team2Squad_11", 9, 18, 2, 50);
+				BattleLib.AddBattleSquad("NothHeavyHSword", "Team2Squad_12", 8, 19, 2, 50);
+				BattleLib.AddBattleSquad("NothHeavyHSword", "Team2Squad_13", 10, 19, 2, 50);
+				BattleLib.AddBattleSquad("NothHeavyHSword", "Team2Squad_14", 1, 12, 2, 50);
+				BattleLib.AddBattleSquad("NothHeavyHSword", "Team2Squad_15", 1, 14, 2, 50);
+				BattleLib.AddBattleSquad("NothHeavyCrossBow", "Team2Squad_16", 9, 19, 2, 50);
+				BattleLib.AddBattleSquad("NothHeavyCrossBow", "Team2Squad_17", 0, 12, 2, 50);
+				BattleLib.AddBattleSquad("NothHeavyCrossBow", "Team2Squad_18", 0, 13, 2, 50);
+				BattleLib.AddBattleSquad("NothHeavyCrossBow", "Team2Squad_19", 0, 14, 2, 50);
+				BattleLib.AssignAIGroup(2, "Team2Squad_11", "Noth");
+				BattleLib.AssignAIGroup(2, "Team2Squad_12", "Noth");
+				BattleLib.AssignAIGroup(2, "Team2Squad_13", "Noth");
+				BattleLib.AssignAIGroup(2, "Team2Squad_14", "Noth");
+				BattleLib.AssignAIGroup(2, "Team2Squad_15", "Noth");
+				BattleLib.AssignAIGroup(2, "Team2Squad_16", "Noth");
+				BattleLib.AssignAIGroup(2, "Team2Squad_17", "Noth");
+				BattleLib.AssignAIGroup(2, "Team2Squad_18", "Noth");
+				BattleLib.AssignAIGroup(2, "Team2Squad_19", "Noth");
+				BattleLib.Story("cp24_2.lua");
+			end
 		end
 	end
 end
