@@ -147,6 +147,7 @@ function inarea()
 	local faction = SquadLib.GetFaction(squad);
 	
 	if faction == 0 and area == "TargetArea" then
+		BattleLib.InterruptMove();
 		BattleLib.AddGold(9000);
 		BattleLib.DumpSquadData();
 		local addedgold = ScriptCommonLib.GetInt("addedgold");
