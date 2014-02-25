@@ -118,6 +118,20 @@ end
 function turnend()
 	local turn = ScriptCommonLib.GetTempInt("turn");
 	local team = ScriptCommonLib.GetTempInt("team");
+	if BattleLib.TeamSquadLeft(2) == 0 then
+		BattleLib.AddGold(9000);
+		BattleLib.DumpSquadData();
+		local addedgold = ScriptCommonLib.GetInt("addedgold");
+		addedgold = addedgold + 9000;
+		local mission1state = ScriptCommonLib.GetInt("mission1state");
+		if mission1state == 1 then
+			BattleLib.AddGold(4800);
+			addedgold = addedgold + 4800;
+		end
+		ScriptCommonLib.SetInt("addedgold", addedgold);
+		--胜利(storyscript,gold,exp)
+		BattleLib.Win("cp38.lua",  addedgold);
+	end
 end
 
 --离开区域触发器
